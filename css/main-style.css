@@ -50,10 +50,15 @@ nav .other .login-btn {
   border-radius: 20px;
 }
 
+nav .other .login-btn:hover {
+  background-color: #187559;
+}
+
 nav .other .search {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-left: 15px;
   background-color: black;
   border-radius: 200px;
   padding: 5px;
@@ -63,7 +68,8 @@ nav .other .search .search-box {
   background-color: transparent;
   border: none;
   outline: none;
-  width: 0%;
+  width: 0;
+  transition: 1s .2s;
 }
 
 nav .other .search .search-icon {
@@ -71,5 +77,6 @@ nav .other .search .search-icon {
 }
 
 nav .other .search:hover .search-box {
-  width: 100%;
+  width: 200px;
+  padding: 0 5px;
 }

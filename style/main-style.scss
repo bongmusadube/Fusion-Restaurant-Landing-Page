@@ -43,8 +43,12 @@ nav {
       border: none;
       border-radius: 20px;
     }
+    .login-btn:hover{
+      background-color: #187559
+    }
     .search {
       @include flexbox();
+      margin-left: 15px;
       background-color: black;
       border-radius: 200px;
       padding: 5px; // On :hover set padding: 5px; -> to make it look like a circle
@@ -52,15 +56,19 @@ nav {
         background-color: transparent;
         border: none;
         outline: none;
-        width: 0%;
+        width: 0;
+        transition: 1s .2s;
       }
       .search-icon {
         color: white;
+        
       }
     }
     .search:hover {
       .search-box {
-        width: 100%;
+        
+        width: 200px;
+        padding: 0 5px;
       }
     }
   }
