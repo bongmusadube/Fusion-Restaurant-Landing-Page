@@ -1,6 +1,7 @@
 $primary-color: #fff1dc;
 $black-font: #222222;
 $bright-green: #25a17c;
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 @mixin flexbox {
   display: flex;
   justify-content: space-evenly;
@@ -15,6 +16,7 @@ $bright-green: #25a17c;
 body {
   background-color: $primary-color;
   color: $black-font;
+  font-family: "Space Mono", monospace;
 }
 nav {
   @include flexbox();
@@ -33,6 +35,23 @@ nav {
       color: $black-font;
       text-decoration: none;
     }
+    li {
+      display: block;
+      position: relative;
+    }
+    li::before {
+      content: "";
+      height: 2px;
+      width: 100%;
+      background-color: #187559;
+      position: absolute;
+      bottom: -5px;
+      transform: scaleX(0);
+      transition: transform 0.5s;
+    }
+    li:hover:before {
+      transform: scaleX(1);
+    }
   }
   .other {
     @include flexbox();
@@ -43,8 +62,8 @@ nav {
       border: none;
       border-radius: 20px;
     }
-    .login-btn:hover{
-      background-color: #187559
+    .login-btn:hover {
+      background-color: #187559;
     }
     .search {
       @include flexbox();
@@ -57,16 +76,14 @@ nav {
         border: none;
         outline: none;
         width: 0;
-        transition: 1s .2s;
+        transition: 1s 0.2s;
       }
       .search-icon {
         color: white;
-        
       }
     }
     .search:hover {
       .search-box {
-        
         width: 200px;
         padding: 0 5px;
       }

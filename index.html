@@ -1,34 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-      <link rel="stylesheet" href="./css/main-style.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main-style.css" />
+  </head>
+  <body>
     <nav>
-        <div class="logo">
-            <img src="./restaurant-logo.png" alt="restaurant-logo">
+      <div class="logo">
+        <img src="./restaurant-logo.png" alt="restaurant-logo" />
+      </div>
+      <ul>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Orders</a></li>
+        <li><a href="#">Delivery</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+      <div class="other">
+        <button class="login-btn">Log In</button>
+        <div class="search">
+          <input
+            type="search"
+            name=""
+            class="search-box"
+            placeholder="Type to search..."
+          />
+          <span class="material-icons search-icon"> search </span>
         </div>
-        <ul>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Orders</a></li>
-            <li><a href="#">Delivery</a></li>
-            <li><a href="#">Contacts</a></li>
-        </ul>
-        <div class="other">
-            <button class="login-btn">Log In</button>
-            <div class="search">
-                <input type="search" name="" class="search-box" placeholder="Type to search...">
-                <span class="material-icons search-icon">
-search
-</span>
-            </div>
-        </div>
+      </div>
     </nav>
-</body>
+    <main>
+        <content class="main-content">
+            <h1>The best <br> delicous food </h1>
+            <p>that meets your needs</p>
+            <div class="food-selector">
+
+            </div>
+            <div class="zip-code-search">
+
+            </div>
+        </content>
+        <div class="selected-food">
+            <!-- IMAGE OF THE FOOD SELECTED -->
+        </div>
+    </main>
+  </body>
 </html>
