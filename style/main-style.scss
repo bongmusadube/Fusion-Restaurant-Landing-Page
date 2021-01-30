@@ -28,6 +28,7 @@ nav {
   .logo img {
     width: 150px;
   }
+  .logo:hover img{opacity: .5;}
   ul {
     @include flexbox();
     width: 40%;

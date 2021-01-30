@@ -26,6 +26,10 @@ nav .logo img {
   width: 150px;
 }
 
+nav .logo:hover img {
+  opacity: .5;
+}
+
 nav ul {
   display: flex;
   justify-content: space-evenly;
