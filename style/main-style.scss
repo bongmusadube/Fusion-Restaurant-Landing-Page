@@ -16,7 +16,7 @@ $bright-green: #25a17c;
 body {
   background-color: $primary-color;
   color: $black-font;
-  font-family: "Space Mono", monospace;
+  // font-family: "Space Mono", monospace;
 }
 nav {
   @include flexbox();
@@ -90,4 +90,48 @@ nav {
       }
     }
   }
+}
+
+main
+{
+   .main-content
+   {
+     h1{font-size: 4rem;}
+     p{font-size: 2rem;}
+
+     .food-selector{
+       @include flexbox();
+       
+      .food{
+        display: flex;
+        margin-top: 10px;
+         flex-direction: column;
+         background-color: white;
+         padding: 5px;
+         padding-bottom: 15px;
+         border-radius: 50px;
+         text-align: center;
+         p{font-size: .8rem;}
+         .food-icon{
+           text-align: center;
+           background-color: $primary-color;
+           margin-bottom: 15px;
+           border-radius: 200px;
+           padding: 10px;
+         }
+         .food-icon img
+         {
+           width: 25px;   
+      }
+
+       }
+       .food:hover{
+         background-color:#ffc160;
+         .food-icon{background-color: white;}
+       }
+
+     }
+
+
+   }
 }

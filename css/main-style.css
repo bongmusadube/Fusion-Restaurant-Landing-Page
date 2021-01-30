@@ -9,7 +9,6 @@
 body {
   background-color: #fff1dc;
   color: #222222;
-  font-family: "Space Mono", monospace;
 }
 
 nav {
@@ -105,4 +104,53 @@ nav .other .search .search-icon {
 nav .other .search:hover .search-box {
   width: 200px;
   padding: 0 5px;
+}
+
+main .main-content h1 {
+  font-size: 4rem;
+}
+
+main .main-content p {
+  font-size: 2rem;
+}
+
+main .main-content .food-selector {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+main .main-content .food-selector .food {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  background-color: white;
+  padding: 5px;
+  padding-bottom: 15px;
+  border-radius: 50px;
+  text-align: center;
+}
+
+main .main-content .food-selector .food p {
+  font-size: .8rem;
+}
+
+main .main-content .food-selector .food .food-icon {
+  text-align: center;
+  background-color: #fff1dc;
+  margin-bottom: 15px;
+  border-radius: 200px;
+  padding: 10px;
+}
+
+main .main-content .food-selector .food .food-icon img {
+  width: 25px;
+}
+
+main .main-content .food-selector .food:hover {
+  background-color: #ffc160;
+}
+
+main .main-content .food-selector .food:hover .food-icon {
+  background-color: white;
 }
