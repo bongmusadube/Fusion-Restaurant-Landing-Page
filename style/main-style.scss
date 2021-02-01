@@ -28,7 +28,9 @@ nav {
   .logo img {
     width: 150px;
   }
-  .logo:hover img{opacity: .5;}
+  .logo:hover img {
+    opacity: 0.5;
+  }
   ul {
     @include flexbox();
     width: 40%;
@@ -61,6 +63,7 @@ nav {
       background-color: $bright-green;
       color: white;
       border: none;
+      cursor: pointer;
       border-radius: 20px;
     }
     .login-btn:hover {
@@ -92,46 +95,100 @@ nav {
   }
 }
 
-main
-{
-   .main-content
-   {
-     h1{font-size: 4rem;}
-     p{font-size: 2rem;}
+main {
+  display: flex;
+  width: 100vw;
+  padding-left: 50px;
+  .main-content {
+    h1 {
+      font-size: 4rem;
+     
+    }
+    .heading-2 {
+      font-size: 2rem;
+      letter-spacing: 0.3rem;
+      width: 80%;
+    }
+    // background: red;
+    width: 50%;
 
-     .food-selector{
-       @include flexbox();
-       
-      .food{
+    .food-selector {
+      @include flexbox();
+      justify-content: space-between;
+      width: 60%;
+      // background: blueviolet;
+
+      .food {
         display: flex;
+        width: 65px;
+        height: 110px;
         margin-top: 10px;
-         flex-direction: column;
-         background-color: white;
-         padding: 5px;
-         padding-bottom: 15px;
-         border-radius: 50px;
-         text-align: center;
-         p{font-size: .8rem;}
-         .food-icon{
-           text-align: center;
-           background-color: $primary-color;
-           margin-bottom: 15px;
-           border-radius: 200px;
-           padding: 10px;
-         }
-         .food-icon img
-         {
-           width: 25px;   
+        flex-direction: column;
+        background-color: white;
+        cursor: pointer;
+        padding: 8px;
+        padding-bottom: 15px;
+        border-radius: 50px;
+        text-align: center;
+        p {
+          font-size: 0.8rem;
+        }
+        .food-icon {
+          text-align: center;
+          background-color: $primary-color;
+          margin-bottom: 15px;
+          border-radius: 200px;
+          padding: 10px;
+        }
+        .food-icon img {
+          width: 25px;
+        }
       }
+      .food:hover {
+        background-color: #ffc160;
+        .food-icon {
+          background-color: white;
+        }
+      }
+      
+    }
+    .zip-code-search{
+        background-color: white;
+        @include flexbox();
+        justify-content: space-between;
+        width: 45%;
+        height: 40px;
+        margin-top: 50px;
+        border-radius: 50px;
+        padding: 15px 5px;
+        input{
+          border: none;
+          outline: none;
+          padding-left: 20px;
+        }
+        .arrow-right{
+          background: $bright-green;
+          color: white;
+          padding: 5px 20px;
+          border-radius: 50px;
+          cursor: pointer;
+        }
+  }
+  
+   
+  }
+  .selected-food {
+    background: blue;
+    width: 50%;
+   height: 80vh;
+    img{
+      // width: 100%;
+      // height: 100%;
+      // object-fit: contain;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
 
-       }
-       .food:hover{
-         background-color:#ffc160;
-         .food-icon{background-color: white;}
-       }
-
-     }
-
-
-   }
 }
+
